@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midi synth in web</title>
+  </head>
+  <body>
+    <div id="app" style=" position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);" >
+     
+    </div>
+    
+    <div  style=" position: absolute;    top: 60%;    left: 50%;    transform: translate(-50%, -50%);" > 
+      <label for="gain">Gain:</label>
+    <input type="range" id="gain" name="gain" min="0" max="1" step="0.1" value="0.5"  >
+  </div>
+  <div style=" position: absolute;  top: 30%;    left: 20%; right: 20%;   " >
+  <p > 
+    Press start and hit any midi key in your controller to hear this snyth :) </p>
+   <p>  If you dont have a midi controller you can follow this link: 
+    <a href="https://www.tobias-erichsen.de/software/loopmidi.html"> https://www.tobias-erichsen.de/software/loopmidi.html</a> and install a virtual midi controller </p>
+  </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
